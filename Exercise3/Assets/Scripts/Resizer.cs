@@ -13,7 +13,7 @@ public class Resizer : MonoBehaviour
     float elapsedResizeSeconds = 0;
 
     // resizing control fields
-    const float ScaleFactorPerSecond = 1;
+    const float ScaleFactorPerSecond = 4;
     int scaleFactorSignMultiplier = 1;
 
     // Update is called once per frame
