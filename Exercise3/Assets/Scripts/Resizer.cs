@@ -30,7 +30,8 @@ public class Resizer : MonoBehaviour
 
         if (elapsedResizeSeconds >= TotalResizeSeconds)
         {
-
+            elapsedResizeSeconds = 0;
+            scaleFactorSignMultiplier *= -1;
         }
     }
 }
