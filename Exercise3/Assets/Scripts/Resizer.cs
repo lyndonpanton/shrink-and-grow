@@ -9,7 +9,7 @@ using UnityEngine;
 public class Resizer : MonoBehaviour
 {
     // timer support fields
-    const float TotalResizeSeconds = 1;
+    const float TotalResizeSeconds = 4;
     float elapsedResizeSeconds = 0;
 
     // resizing control fields
@@ -21,8 +21,8 @@ public class Resizer : MonoBehaviour
     {
         Vector2 scale = transform.localScale;
 
-        scale.x += Time.deltaTime * ScaleFactorPerSecond;
-        scale.y += Time.deltaTime * ScaleFactorPerSecond;
+        scale.x += Time.deltaTime * ScaleFactorPerSecond * scaleFactorSignMultiplier;
+        scale.y += Time.deltaTime * ScaleFactorPerSecond * scaleFactorSignMultiplier;
 
         transform.localScale = scale;
 
